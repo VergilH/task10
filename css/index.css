@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: microsoft YaHei;
+	background-color: #F9F9F9;
+}
+
+button {
+	padding: 0;
+	border: none;
+}
+
+/*页首*/
+
+header {
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	width: 1200px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.header-bg {
+	z-index: -1;
+	position: relative;
+	width: 100vw;
+	height: 40px;
+	background-color: #1D7AD9;
+	overflow: hidden;
+}
+
+.header-text {
+	display: inline;
+	line-height: 30px;
+}
+
+.login {
+	float: right;
+	width: 55px;
+	height: 40px;
+	border: 0;
+	border-left: 1px solid #FFF;
+	box-sizing: border-box;
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.register {
+	float: right;
+	width: 104px;
+	height: 40px;
+	border: 0;
+	border-left:1px solid #FFF;
+	border-right:1px solid #FFF;
+	box-sizing: border-box;
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+header button {
+	padding: 0;
+	border: 0;
+}
+
+header button:hover .login{
+	background-color: #FFF;
+	color: #000;
+}
+header button:focus .login{
+	background-color: #FFF;
+	color: #000;
+}
+
+/*导航*/
+
+nav {
+	position: relative;
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	padding-right: 2px;
+}
+
+nav div {
+	float: right;
+	height: 47px;
+	line-height: 17px;
+	margin: 28px 0 0 60px;
+	padding: 15px 17px;
+	border-bottom: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-radius: 6px;
+	font-size: 16px;
+	color: #000;
+	background-color: #FFF;
+}
+
+nav a:hover div {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+nav a:focus div {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.nav-bg {
+	z-index: -1;
+	position: relative;
+	width: 100vw;
+	height: 100px;
+	background-color: #F9F9F9;
+	overflow: hidden;
+}
+
+/*页尾*/
+
+footer {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 58px;
+	width: 1200px;
+	height: 239px;
+	color: #FFF;
+	background-color: #F9F9F9;
+}
+
+.footer-bg {
+	z-index: -1;
+	position: relative;
+	width: 100vw;
+	height: 206px;
+	background-color: #F9F9F9;
+	overflow: hidden;
+}
+
+/*声明*/
+
+.copyright {
+	position: relative;
+	margin: 0 auto;
+	width:100vw;
+	height: 33px;
+	line-height: 33px;
+	background-color: #1D7AD9;
+	text-align: center;
+}
+.copyright p {
+	font-size: 12px;
+	color: #FFF;
+}
+
+/*字体颜色大小*/
+
+.regular-text {
+	font-size: 14px;
+	color: #999;
+}
+
+.bold-text {
+	font-size: 18px;
+	color: #999;
+}
