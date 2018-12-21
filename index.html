@@ -15,10 +15,10 @@
   <div class="header-bg">
   	<header>
   		<p class="header-text">客服热线：010-594-78634</p>
-  		<button type="button" class="register">
+  		<button class="register" type="button">
   			<div>注册</div>
   		</button>
-  		<button type="button" class="login">
+  		<button class="login" type="button">
   			<div>登陆</div>
   		</button>
   	</header>
@@ -41,28 +41,113 @@
   	</nav>
   </div>
 
+  <group id="group">
+    <div class="group pull-right">
+      <span class="group-number">4</span>
+      <span class="group-line"></span>
+      <span class="text-grey">4.确认下单</span>
+    </div>
+    <div class="group pull-right">
+      <span class="group-number">3</span>
+      <span class="group-line"></span>
+      <span class="text-grey">3.上传附件</span>
+    </div>
+    <div class="group pull-right">
+      <span class="group-number">2</span>
+      <span class="group-line"></span>
+      <span class="text-grey">2.选择数量</span>
+    </div>
+    <div class="group pull-right">
+      <span class="group-number group-default">1</span>
+      <span class="group-line group-default"></span>
+      <span>1.定制纸箱</span>
+    </div>
+  </group>
+
   <main>
-  	<a href="#">
-  		<div></div>
-  	</a>
-  	<button type="button">
-  		<div></div>
-  	</button>
-  	
+    <div class="text-22 text-black main-title">请您按照以下步骤来定制您的纸箱</div>
+    <div class="main-tab radius">
+      <img class="icon-box" src="images/box.png">
+      <p class="text-blue text-18">选择箱型</p>
+    </div>
+
+    <form class="main-choise" action="">
+      <input type="radio" name="选择箱型" checked="checked" id="对口箱">
+      <label for="对口箱">对口箱</label>
+      <input type="radio" name="选择箱型" id="飞机盒">
+      <label for="对口箱">飞机盒</label>
+      <input type="radio" name="选择箱型" id="天地盖">
+      <label for="对口箱">天地盖</label>
+    </form>
+
+    <div class="main-tab">
+      <img class="icon-square" src="images/square.png">
+      <p class="text-blue text-18">确定尺寸</p>
+    </div>
+
+    <form class="main-choise" action="">
+      <input type="radio" name="确定尺寸" checked="checked">外径
+      长<input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+      宽<input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+      高<input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+      <br>
+      <input type="radio" name="确定尺寸">内径
+      长<input type="text" name="">mm
+      宽<input type="text" name="">mm
+      高<input type="text" name="">mm
+    </form>
+
+    <div class="main-tab">
+      <img class="icon-scissors" src="images/scissors.png">
+      <p class="text-blue text-18">选择材质</p>
+    </div>
+
+    <form class="main-choise" action="">
+      <input type="radio" name="选择材质" checked="checked">三层A瓦优质
+      <input type="radio" name="选择材质">三层A瓦优质
+      <input type="radio" name="选择材质">三层A瓦优质
+      <input type="radio" name="选择材质">三层A瓦优质
+      <input type="radio" name="选择材质">三层A瓦优质
+    </form>
+
+    <div>
+      <button class="btn" type="button">下一步</button>
+    </div>
+
   </main>
 
   <div class="footer-bg">
   	<footer>
-  		<span>
-  			<p class="bold-text">51包装网— 纸箱包装首选服务平台</p>
-  		</span>
-  		<span>
-  			<p class="regular-text">关于我们</p>
-  			<p class="regular-text">配送流程</p>
-  			<p class="regular-text">联系我们</p>
-  			<p class="regular-text">下单指南</p>
-  			<p class="regular-text">媒体介绍</p>
-  		</span>
+      <div class="pull-left">
+  		  <span>
+  			 <p class="bold-text">51包装网— 纸箱包装首选服务平台</p>
+  		  </span>
+      </div>
+      <div class="pull-left footer-name">
+  		  <span>
+  			 <p class="regular-text pull-left">关于我们&#12288;&#12288;</p>
+  			 <p class="regular-text pull-left">配送流程&#12288;&#12288;</p>
+  			 <p class="regular-text">联系我们</p>
+  			 <p class="regular-text pull-left">下单指南&#12288;&#12288;</p>
+  			 <p class="regular-text">媒体介绍</p>
+  		  </span>
+      </div>
+
+      <div class="pull-right footer-about">
+        <img src="images/QRcode.png">
+      </div>
+
+      <div class="pull-right footer-touch">
+        <span class="regular-text">
+          <p class="regular-text">TEL:400-0000-000</p>
+        </span>
+        <span class="regular-text">
+          <p class="regular-text">企业QQ:123456789</p>
+        </span>
+        <span class="regular-text">
+          <p class="regular-text">微信号:XXXXXXX</p>
+        </span>
+      </div>
   	</footer>
   </div>
 
