@@ -23,7 +23,7 @@ button {
 }
 
 .text-22 {
-	font-size: 18px!important;
+	font-size: 22px!important;
 }
 
 .text-black {
@@ -147,7 +147,7 @@ nav a:focus div {
 #group {
 	display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 40px auto;
     overflow: auto;
     width: 1200px;
     height: auto;
@@ -196,14 +196,18 @@ nav a:focus div {
 main {
 	position: relative;
 	margin: 0 auto;
+    margin-bottom: 52px;
+	border: 1px solid #E8E8E8;
+    border-radius: 10px 10px 0 0;
 	width: 1200px;
 	height: auto;
 	overflow: hidden;
 }
 
 .main-title {
+	width: 1200px;
 	height: 22px;
-    margin: 3px;
+    margin: 3px auto 16px;
     padding: 0 0 0 5px;
     border-left: 3px solid #1D7AD9;
     border-radius: 1px;
@@ -241,8 +245,21 @@ main {
 
 .main-choise {
 	position: relative;
-	width: 1200px;
+	width: 100%;    
+	padding: 0 0 0 45px;
+	border: 1px solid #E8E8E8;
+    border-width: 1px 0;
+    color: #666;
+    font-size: 18px;
 	background-color: #FBFCFF;
+}
+
+input[type="text"] {
+	margin: 0 4px 0 8px;
+	width: 68px;
+    height: 28px;
+    border: 1px solid #E8E8E8;
+    background-color: #FBFCFF;
 }
 
 input[type="radio"] {
@@ -257,7 +274,8 @@ input[type="radio"]+ label::before {
     font-size: 18px;
     width: 18px;
     height: 18px;
-    margin-right: 8px;
+    margin-right: 16px;
+    margin-bottom: 3px;
     border-radius: 50%;
     border: 1px solid #D6D6D6;
     text-indent: 1.5px;
@@ -267,6 +285,83 @@ input[type="radio"]:checked + label::before {
     border: 7px solid #1D7AD9;
     background-color: #FFF;
     background-clip: content-box;
+}
+
+select {
+	position: absolute;
+	top: 50%;
+	right: 1.4%;
+	float: right;
+	margin-top: -18px!important;
+	width: 128px;
+    height: 36px;
+    padding-left: 17px;
+    border: 1px solid #E8E8E8;
+    color: #999!important;
+    font-size: 14px!important;
+    appearance: none; 
+  	-moz-appearance: none;  
+  	-webkit-appearance: none;
+    background: #FFF url(../images/arrow.png) 95% center no-repeat;
+}
+
+label {
+	margin-right: 60px;
+	color: #666;
+	font-weight: normal!important;
+	align-items: center;
+}
+
+.middle1 {
+	line-height: 84px;
+}
+
+.middle2 {
+	line-height: 50.5px;
+}
+
+.middle3 {
+	line-height: 101px;
+}
+
+.next-step {
+	position: relative;
+	width: 100%;
+	height: 286px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #FFF;
+}
+
+main button {
+	margin: 142px auto 0;
+	border: none!important;
+	width: 179px;
+	height: 46px;
+	background: #E15053;
+	line-height: 46px;
+	font-size: 24px!important;
+}
+
+main button:hover {
+	color: #999!important;
+	outline: none;
+	background: #d43f3a;
+}
+
+main button:focus {
+	color: #999!important;
+	outline: none!important;
+	background: #d43f3a;
+}
+
+.main-content1 {
+	height: 86px;
+}
+
+.main-content2 {
+	height: 141px;
+    padding: 20px 0 20px 45px;
 }
 
 
@@ -315,6 +410,7 @@ footer {
 	text-align: center;
 }
 .copyright p {
+	margin-bottom: 0;
 	font-size: 12px;
 	color: #FFF;
 }

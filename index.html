@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title>技能树首页</title>
+  <title>51包装</title>
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -64,25 +64,26 @@
     </div>
   </group>
 
+
+  <div class="text-22 text-black main-title">请您按照以下步骤来定制您的纸箱</div>
   <main>
-    <div class="text-22 text-black main-title">请您按照以下步骤来定制您的纸箱</div>
     <div class="main-tab radius">
       <img class="icon-box" src="images/box.png">
       <p class="text-blue text-18">选择箱型</p>
     </div>
 
-    <form class="main-choise" action="">
+    <form class="main-choise main-content1" action="">
       <input type="radio" name="选择箱型" checked="checked" id="对口箱">
-      <label for="对口箱">对口箱</label>
+      <label class="middle1" for="对口箱">对口箱</label>
       <input type="radio" name="选择箱型" id="飞机盒">
-      <label for="飞机盒">飞机盒</label>
+      <label class="middle1" for="飞机盒">飞机盒</label>
       <input type="radio" name="选择箱型" id="天地盖">
-      <label for="天地盖">天地盖</label>
+      <label class="middle1" for="天地盖">天地盖</label>
       <select name="">
         <option class="hidden" value="">查看详情</option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
+        <option value="">查看详情</option>
+        <option value="">查看详情</option>
+        <option value="">查看详情</option>
       </select>
     </form>
 
@@ -91,12 +92,12 @@
       <p class="text-blue text-18">确定尺寸</p>
     </div>
 
-    <form class="main-choise" action="">
+    <form class="main-choise main-content2" action="">
       <input type="radio" name="确定尺寸" checked="checked" id="外径">
-      <label for="外径">外径</label>
-      长<input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-      宽<input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-      高<input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+      <label class="middle2" for="外径">外径</label>
+      长<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+      宽<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+      高<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
       <select name="">
         <option class="hidden" value="">查看详情</option>
         <option value="">1</option>
@@ -105,10 +106,10 @@
       </select>
       <br>
       <input type="radio" name="确定尺寸" id="内径">
-      <label for="内径">内径</label>
-      长<input type="text" name="">mm
-      宽<input type="text" name="">mm
-      高<input type="text" name="">mm
+      <label class="middle2" for="内径">内径</label>
+      长<input class="middle2" type="text" name="">mm
+      宽<input class="middle2" type="text" name="">mm
+      高<input class="middle2" type="text" name="">mm
     </form>
 
     <div class="main-tab">
@@ -116,17 +117,17 @@
       <p class="text-blue text-18">选择材质</p>
     </div>
 
-    <form class="main-choise" action="">
+    <form class="main-choise main-content2" action="">
       <input type="radio" name="选择材质" checked="checked" id="三层A瓦优质1">
-      <label for="三层A瓦优质1">三层A瓦优质</label>
+      <label class="middle3" for="三层A瓦优质1">三层A瓦优质</label>
       <input type="radio" name="选择材质" id="三层A瓦优质2">
-      <label for="三层A瓦优质2">三层A瓦优质</label>
+      <label class="middle3" for="三层A瓦优质2">三层A瓦优质</label>
       <input type="radio" name="选择材质" id="三层A瓦优质3">
-      <label for="三层A瓦优质3">三层A瓦优质</label>
+      <label class="middle3" for="三层A瓦优质3">三层A瓦优质</label>
       <input type="radio" name="选择材质" id="三层A瓦优质4">
-      <label for="三层A瓦优质4">三层A瓦优质</label>
+      <label class="middle3" for="三层A瓦优质4">三层A瓦优质</label>
       <input type="radio" name="选择材质" id="三层A瓦优质5">
-      <label for="三层A瓦优质5">三层A瓦优质</label>
+      <label class="middle3" for="三层A瓦优质5">三层A瓦优质</label>
       <select name="">
         <option class="hidden" value="">查看详情</option>
         <option value="">1</option>
@@ -135,7 +136,7 @@
       </select>
     </form>
 
-    <div>
+    <div class="next-step">
       <button class="btn" type="button">下一步</button>
     </div>
 
