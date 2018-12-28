@@ -35,6 +35,12 @@ button {
 	color: #1D7AD9!important;
 }
 
+a:hover {
+	text-decoration: none!important;
+}
+a:focus {
+	text-decoration: none!important;
+}
 
 /*页首*/
 
@@ -42,7 +48,8 @@ header {
 	position: relative;
 	top: 0;
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 	height: 40px;
 	line-height: 40px;
 	font-size: 14px;
@@ -53,7 +60,7 @@ header {
 .header-bg {
 	position: relative;
 	width: 100vw;
-	height: 40px;
+	height: auto;
 	background-color: #1D7AD9;
 	overflow: hidden;
 }
@@ -104,7 +111,8 @@ header button:focus div{
 
 nav {
 	position: relative;
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 	height: 100px;
 	margin: 0 auto;
 	padding-right: 2px;
@@ -136,7 +144,7 @@ nav a:focus div {
 .nav-bg {
 	position: relative;
 	width: 100vw;
-	height: 100px;
+	height: auto;
 	background-color: #F9F9F9;
 	overflow: hidden;
 }
@@ -149,7 +157,8 @@ nav a:focus div {
     position: relative;
     margin: 40px auto;
     overflow: auto;
-    width: 1200px;
+    max-width: 1200px;
+	width: 100%;
     height: auto;
 }
 
@@ -195,24 +204,28 @@ nav a:focus div {
 
 main {
 	position: relative;
+}
+
+.main-content {
 	margin: 0 auto;
     margin-bottom: 52px;
 	border: 1px solid #E8E8E8;
     border-radius: 10px 10px 0 0;
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
 }
 
 .main-title {
-	width: 1200px;
-	height: 22px;
+	max-width: 1200px;
+	width: 100%;
     margin: 3px auto 16px;
     padding: 0 0 0 5px;
     border-left: 3px solid #1D7AD9;
     border-radius: 1px;
     box-sizing: border-box;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .main-tab {
@@ -307,9 +320,13 @@ select {
 
 label {
 	margin-right: 60px;
+	margin-bottom: 0!important;
 	color: #666;
 	font-weight: normal!important;
 	align-items: center;
+}
+form div {
+	display: inline-block;
 }
 
 .middle1 {
@@ -356,12 +373,15 @@ main button:focus {
 }
 
 .main-content1 {
-	height: 86px;
+    padding: 0 140px 0 45px;
 }
 
 .main-content2 {
-	height: 141px;
-    padding: 20px 0 20px 45px;
+    padding: 20px 140px 20px 45px;
+}
+
+.no-margin {
+	margin-right: 0!important;
 }
 
 
@@ -371,14 +391,15 @@ footer {
 	position: relative;
 	margin: 0 auto;
 	padding-top: 58px;
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 	height: 239px;
 	color: #FFF;
 	background-color: #F9F9F9;
 }
 
 .footer-name {
-	margin: 2px 0 0 180px;
+	margin: 0 0 0 180px;
 	width: 240px;
 	height: auto;
 }
@@ -393,10 +414,16 @@ footer {
 .footer-bg {
 	position: relative;
 	width: 100vw;
-	height: 206px;
+	height: auto;
 	background-color: #F9F9F9;
 	overflow: hidden;
 }
+
+footer span a:hover p {
+	text-decoration: none!important;
+	color: #1d7ad9;
+}
+
 
 /*声明*/
 
@@ -404,7 +431,6 @@ footer {
 	position: relative;
 	margin: 0 auto;
 	width:100vw;
-	height: 33px;
 	line-height: 33px;
 	background-color: #1D7AD9;
 	text-align: center;
@@ -425,4 +451,99 @@ footer {
 .bold-text {
 	font-size: 18px;
 	color: #999;
+}
+
+
+/*媒体查询*/
+
+@media screen and (max-width: 1215px) {
+	header {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	nav {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#group {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.main-content {
+
+	}
+
+	main {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	footer {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.copyright {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.footer-name {
+		margin: 0 0 0 70px;
+	}
+}
+
+@media screen and (max-width: 875px) {
+
+	nav div {
+		margin-left: 20px;
+	}
+
+
+	.group {
+		width: 125px;
+	}
+
+
+	form div {
+		display: block;
+		margin: 5px 0;
+	}
+
+	.middle3 {
+    	display: block;
+    	line-height: 60px;
+	}
+
+	.footer-name {
+		float: none!important;
+		margin: 45px 0 0;
+	}
+
+	.footer-about {
+		margin-top: 20px;
+	}
+
+	.footer-touch {
+		float: left!important;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header button {
+		width: 50px!important;
+	}
+}
+
+@media screen and (max-width: 685px) {
+	.middle1 {
+		display: block;
+		line-height: 60px;
+	}
 }

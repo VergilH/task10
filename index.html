@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>51包装</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="js/bootstrap.js"></script>
 </head>
 <body>
@@ -64,83 +64,100 @@
     </div>
   </group>
 
-
-  <div class="text-22 text-black main-title">请您按照以下步骤来定制您的纸箱</div>
   <main>
-    <div class="main-tab radius">
-      <img class="icon-box" src="images/box.png">
-      <p class="text-blue text-18">选择箱型</p>
+
+    <div class="text-22 text-black main-title">请您按照以下步骤来定制您的纸箱</div>
+
+    <div class="main-content">
+
+      <div class="main-tab radius">
+        <img class="icon-box" src="images/box.png">
+        <p class="text-blue text-18">选择箱型</p>
+      </div>
+
+      <form class="main-choise main-content1" action="">
+        <input type="radio" name="选择箱型" checked="checked" id="对口箱">
+        <label class="middle1" for="对口箱">对口箱</label>
+        <input type="radio" name="选择箱型" id="飞机盒">
+        <label class="middle1" for="飞机盒">飞机盒</label>
+        <input type="radio" name="选择箱型" id="天地盖">
+        <label class="middle1" for="天地盖">天地盖</label>
+        <select name="">
+          <option class="hidden" value="">查看详情</option>
+          <option value="">查看详情</option>
+          <option value="">查看详情</option>
+          <option value="">查看详情</option>
+        </select>
+      </form>
+
+      <div class="main-tab">
+        <img class="icon-square" src="images/square.png">
+        <p class="text-blue text-18">确定尺寸</p>
+      </div>
+
+      <form class="main-choise main-content2" action="">
+        <input type="radio" name="确定尺寸" checked="checked" id="外径">
+        <label class="middle2" for="外径">外径</label>
+        <div>
+          长<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+        </div>
+        <div>
+          宽<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+        </div>
+        <div>
+          高<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+        </div>
+        <select name="">
+          <option class="hidden" value="">查看详情</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <br>
+        <input type="radio" name="确定尺寸" id="内径">
+        <label class="middle2" for="内径">内径</label>
+        <div>
+          长<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+        </div>
+        <div>
+          宽<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+        </div>
+        <div>
+          高<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
+        </div>
+      </form>
+
+      <div class="main-tab">
+        <img class="icon-scissors" src="images/scissors.png">
+        <p class="text-blue text-18">选择材质</p>
+      </div>
+
+      <form class="main-choise main-content2" action="">
+        <input type="radio" name="选择材质" checked="checked" id="三层A瓦优质1">
+        <label class="middle3" for="三层A瓦优质1">三层A瓦优质</label>
+        <input type="radio" name="选择材质" id="三层A瓦优质2">
+        <label class="middle3" for="三层A瓦优质2">三层A瓦优质</label>
+        <input type="radio" name="选择材质" id="三层A瓦优质3">
+        <label class="middle3" for="三层A瓦优质3">三层A瓦优质</label>
+        <input type="radio" name="选择材质" id="三层A瓦优质4">
+        <label class="middle3" for="三层A瓦优质4">三层A瓦优质</label>
+        <input type="radio" name="选择材质" id="三层A瓦优质5">
+        <label class="middle3 no-margin" for="三层A瓦优质5">三层A瓦优质</label>
+        <select name="">
+          <option class="hidden" value="">查看详情</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </form>
+
+      <div class="next-step">
+        <button class="btn" type="button">下一步</button>
+      </div>
+
     </div>
-
-    <form class="main-choise main-content1" action="">
-      <input type="radio" name="选择箱型" checked="checked" id="对口箱">
-      <label class="middle1" for="对口箱">对口箱</label>
-      <input type="radio" name="选择箱型" id="飞机盒">
-      <label class="middle1" for="飞机盒">飞机盒</label>
-      <input type="radio" name="选择箱型" id="天地盖">
-      <label class="middle1" for="天地盖">天地盖</label>
-      <select name="">
-        <option class="hidden" value="">查看详情</option>
-        <option value="">查看详情</option>
-        <option value="">查看详情</option>
-        <option value="">查看详情</option>
-      </select>
-    </form>
-
-    <div class="main-tab">
-      <img class="icon-square" src="images/square.png">
-      <p class="text-blue text-18">确定尺寸</p>
-    </div>
-
-    <form class="main-choise main-content2" action="">
-      <input type="radio" name="确定尺寸" checked="checked" id="外径">
-      <label class="middle2" for="外径">外径</label>
-      长<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-      宽<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-      高<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-      <select name="">
-        <option class="hidden" value="">查看详情</option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-      </select>
-      <br>
-      <input type="radio" name="确定尺寸" id="内径">
-      <label class="middle2" for="内径">内径</label>
-      长<input class="middle2" type="text" name="">mm
-      宽<input class="middle2" type="text" name="">mm
-      高<input class="middle2" type="text" name="">mm
-    </form>
-
-    <div class="main-tab">
-      <img class="icon-scissors" src="images/scissors.png">
-      <p class="text-blue text-18">选择材质</p>
-    </div>
-
-    <form class="main-choise main-content2" action="">
-      <input type="radio" name="选择材质" checked="checked" id="三层A瓦优质1">
-      <label class="middle3" for="三层A瓦优质1">三层A瓦优质</label>
-      <input type="radio" name="选择材质" id="三层A瓦优质2">
-      <label class="middle3" for="三层A瓦优质2">三层A瓦优质</label>
-      <input type="radio" name="选择材质" id="三层A瓦优质3">
-      <label class="middle3" for="三层A瓦优质3">三层A瓦优质</label>
-      <input type="radio" name="选择材质" id="三层A瓦优质4">
-      <label class="middle3" for="三层A瓦优质4">三层A瓦优质</label>
-      <input type="radio" name="选择材质" id="三层A瓦优质5">
-      <label class="middle3" for="三层A瓦优质5">三层A瓦优质</label>
-      <select name="">
-        <option class="hidden" value="">查看详情</option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-      </select>
-    </form>
-
-    <div class="next-step">
-      <button class="btn" type="button">下一步</button>
-    </div>
-
   </main>
+  
 
   <div class="footer-bg">
   	<footer>
@@ -151,11 +168,11 @@
       </div>
       <div class="pull-left footer-name">
   		  <span>
-  			 <p class="regular-text pull-left">关于我们&#12288;&#12288;</p>
-  			 <p class="regular-text pull-left">配送流程&#12288;&#12288;</p>
-  			 <p class="regular-text">联系我们</p>
-  			 <p class="regular-text pull-left">下单指南&#12288;&#12288;</p>
-  			 <p class="regular-text">媒体介绍</p>
+  			 <a href="#"><p class="regular-text pull-left">关于我们&#12288;&#12288;</p></a>
+  			 <a href="#"><p class="regular-text pull-left">配送流程&#12288;&#12288;</p></a>
+  			 <a href="#"><p class="regular-text">联系我们</p></a>
+  			 <a href="#"><p class="regular-text pull-left">下单指南&#12288;&#12288;</p></a>
+  			 <a href="#"><p class="regular-text">媒体介绍</p></a>
   		  </span>
       </div>
 
