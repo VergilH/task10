@@ -141,6 +141,11 @@ nav a:focus div {
 	background-color: #1D7AD9;
 }
 
+.checked {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
 .nav-bg {
 	position: relative;
 	width: 100vw;
@@ -163,6 +168,7 @@ nav a:focus div {
 }
 
 .group {
+	display: inline-block;
 	position: relative;
 	width: 160px;
 	height: auto;
@@ -170,6 +176,12 @@ nav a:focus div {
 	text-align: center;
 	font-size: 18px;
 	color: #FF7F02;
+    letter-spacing: 0;
+}
+
+.box {
+    font-size: 0;
+    letter-spacing: -3px;
 }
 
 .group-default {
@@ -283,16 +295,15 @@ input[type="radio"] {
 input[type="radio"]+ label::before {
     content: "\a0"; /*不换行空格*/
     display: inline-block;
-    vertical-align: middle;
-    font-size: 18px;
     width: 18px;
     height: 18px;
-    margin-right: 16px;
-    margin-bottom: 3px;
+    margin: 0 16px 3px 0;
     border-radius: 50%;
     border: 1px solid #D6D6D6;
     text-indent: 1.5px;
+    font-size: 18px;
     line-height: 1; 
+    vertical-align: middle;
 }
 input[type="radio"]:checked + label::before {
     border: 7px solid #1D7AD9;
@@ -327,6 +338,7 @@ label {
 }
 form div {
 	display: inline-block;
+	margin-right: 10px;
 }
 
 .middle1 {
@@ -535,15 +547,48 @@ footer span a:hover p {
 	}
 }
 
-@media screen and (max-width: 400px) {
-	header button {
-		width: 50px!important;
-	}
-}
-
 @media screen and (max-width: 685px) {
 	.middle1 {
 		display: block;
 		line-height: 60px;
+	}
+
+	.box {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	nav div {
+		width: 23%;
+		margin: 28px 1% 0;
+		padding: 15px 7px;
+		text-align: center;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	header button {
+		width: 50px!important;
+	}
+
+	.main-content1 {
+		padding: 0 130px 0 15px;
+	}
+
+	.main-content2 {
+		padding: 0 130px 0 15px;
+	}
+
+	label {
+		margin-right: 0;
+	}
+
+	select {
+		width: 105px;
+		padding-left: 10px;
 	}
 }
