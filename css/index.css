@@ -545,6 +545,10 @@ footer span a:hover p {
 		float: left!important;
 		margin-top: 20px;
 	}
+
+	footer span a p {
+		clear: both;
+	}
 }
 
 @media screen and (max-width: 685px) {
