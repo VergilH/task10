@@ -417,6 +417,8 @@ footer {
 }
 
 .footer-about {
+	float: right;
+	width: 230px;
 }
 
 .footer-touch {
@@ -538,12 +540,21 @@ footer span a:hover p {
 	}
 
 	.footer-about {
-		margin-top: 20px;
+		float: left;
+	}
+
+	.clear {
+		clear: both;
 	}
 
 	.footer-touch {
-		float: left!important;
+		float: none!important;
 		margin-top: 20px;
+	}
+
+	.QR-code {
+		float: none!important;
+		margin-bottom: 20px;
 	}
 
 	footer span a p {
