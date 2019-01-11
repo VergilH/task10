@@ -122,28 +122,47 @@ nav div {
 	float: right;
 	height: 47px;
 	margin: 28px 0 0 60px;
-	padding: 15px 17px;
 	border-bottom: 1px solid #E6E6E6;
 	border-right: 1px solid #E6E6E6;
 	border-radius: 6px;
 	font-size: 16px;
 	color: #000;
-	line-height: 17px;
 	background-color: #FFF;
 }
 
-nav a:hover div {
+nav a {
+	display: inline-block;
+    padding: 0 15px;
+    height: 47px;
+    color: #333;
+    line-height: 45px;
+    box-sizing: border-box;
+}
+
+nav div:hover {
 	color: #FFF;
 	background-color: #1D7AD9;
 }
-nav a:focus div {
+nav div:focus {
 	color: #FFF;
 	background-color: #1D7AD9;
+}
+
+nav a:hover {
+	color: #FFF;
+}
+
+nav a:foucs {
+	color: #FFF;
 }
 
 .checked {
 	color: #FFF;
 	background-color: #1D7AD9;
+}
+
+.checked a {
+	color: #fff;
 }
 
 .nav-bg {
@@ -577,11 +596,14 @@ footer span a:hover p {
 	nav div {
 		width: 23%;
 		margin: 28px 1% 0;
-		padding: 15px 7px;
 		text-align: center;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
+	}
+
+	nav a {
+		width: 100%;
 	}
 }
 

@@ -5,10 +5,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>51包装</title>
-  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function(){
+       $(".nav-bg nav div").hover(function(){
+            $(this).addClass("shadow");
+            $(this).siblings('div').removeClass("checked");
+       });
+   });
+  </script>
 </head>
 <body>
 
@@ -26,18 +34,17 @@
 
   <div class="nav-bg">
   	<nav>
-  		<a href="#">
-  			<div>品质保障</div>
-  		</a>
-  		<a href="#">
-  			<div>标准箱</div>
-  		</a>
-  		<a href="#">
-  			<div>在线定制</div>
-  		</a>
-  		<a href="#">
-  			<div class="checked">首页</div>
-  		</a>
+  		
+  			<div class="shadow"><a href="#">品质保障</a></div>
+  		
+  			<div class="shadow"><a href="#">标准箱</a></div>
+  		
+  		
+  			<div class="shadow"><a href="#">在线定制</a></div>
+  		
+  		
+  			<div class="checked"><a href="#">首页</a></div>
+  		
   	</nav>
   </div>
 
